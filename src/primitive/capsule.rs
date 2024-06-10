@@ -4,7 +4,7 @@ use crate::{Aabb3, Ray};
 use crate::primitive::{Primitive, util::cylinder_ray_quadratic_solve};
 use crate::volume::Sphere;
 
-pub use crate::bound::{PlaneBound, Relation};
+
 pub use crate::traits::*;
 pub use crate::volume::{Aabb, MinMax};
 

@@ -20,6 +20,7 @@ use crate::traits::{Continuous, Discrete};
 /// alternative, `A*x + B*y + C*z + D = 0`, because it tends to avoid
 /// superfluous negations (see _Real Time Collision Detection_, p. 55).
 #[derive(Copy, Clone, PartialEq)]
+#[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
 pub struct Plane {
     /// Plane normal
     pub n: Vec3,

@@ -5,9 +5,9 @@ use glam::{Vec3, Mat4};
 use crate::{Aabb3, ray::Ray};
 use crate::primitive::{Capsule, ConvexPolyhedron, Cube, Cuboid, Cylinder, Particle, Quad, Sphere};
 
-pub use crate::bound::{PlaneBound, Relation};
+
 pub use crate::traits::*;
-pub use crate::volume::{Aabb, MinMax};
+pub use crate::volume::{Aabb};
 
 /// Wrapper enum for 3D primitives, that also implements the `Primitive` trait, making it easier
 /// to use many different primitives in algorithms.
